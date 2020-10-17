@@ -1,0 +1,39 @@
+{
+  "name": "bth-portfolio_gh-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "next.config.js",
+  "dependencies": {
+    "next": "9.5.5",
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
+  },
+  "devDependencies": {
+    "create-next-app": "^9.5.5"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "next:init": "create-next-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damien-bayes/bth-portfolio_gh-pages.git"
+  },
+  "keywords": [
+    "Baythium",
+    "Baythium Ecosystem",
+    "Baythium Family",
+    "Portfolio",
+    "CV",
+    "Curriculum Vitae"
+  ],
+  "author": "Baythium Ecosystem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/damien-bayes/bth-portfolio_gh-pages/issues"
+  },
+  "homepage": "https://github.com/damien-bayes/bth-portfolio_gh-pages#readme"
+}
