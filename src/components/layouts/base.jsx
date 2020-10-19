@@ -70,7 +70,7 @@ const Layout = (props) => (
 
     <AppHeader/>
     <div className="container container--horizontal-aligned">
-      <main>
+      <main className="mr--5">
         {/* Render the page contents using {props.children} */}
         {props.children}
       </main>

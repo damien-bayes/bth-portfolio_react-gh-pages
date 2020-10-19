@@ -21,11 +21,72 @@ import Link from 'next/link';
 /* Settings */
 import AppSettings from '../settings/app';
 
+/* Styles */
+import styles from '../styles/components/sidebar.module.scss';
+
 /*****************************************************************************/
+
+const experienceLevels = [
+  'Junior',
+  'Middle',
+  'Senior',
+  'Lead',
+  'Architect',
+  'Principal',
+];
+
+const emails = [
+  {
+    email: 'damien.bayes.db@gmail.com',
+    isPrimary: true,
+  },
+  {
+    email: 'baythium@gmail.com',
+    isPrimary: false,
+  },
+  {
+    email: 'damien.bayes@baythium.com',
+    isPrimary: false,
+  }
+];
+
+const languages = [
+  {
+    name: 'Russian',
+    level: 'Native',
+  },
+  {
+    name: 'English',
+    level: 'Upper-Intermediate',
+  },
+  {
+    name: 'German',
+    level: 'Beginner',
+  }
+];
+
+const socialNetworks = [
+  {
+    name: 'Github',
+    url: 'https://github.com/damien-bayes',
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/damien-bayes',
+  },
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com/damien_bayes',
+  },
+  {
+    name: 'Facebook',
+    url: 'https://www.facebook.com/damien.bayes.db1',
+  }
+];
 
 const Sidebar = () => {
   return (
-    <aside style={{ width: "400px" }}>
+    <aside className={styles['sidebar']}>
       <div className="container">
 
         {/* Card - Social Networks */}

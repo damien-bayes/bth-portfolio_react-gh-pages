@@ -17,7 +17,7 @@ on:
 
 jobs:
   build-and-deploy:
-    name: Builds a project and deploys to production
+    name: Build a project and deploy to production
     if: ${{ !contains(github.event.head_commit.message, '[skip') || !contains(github.event.head_commit.message, 'ci]') }}
     runs-on: ubuntu-18.04
     strategy:
