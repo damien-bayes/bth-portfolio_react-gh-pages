@@ -32,7 +32,7 @@ const Footer = () => {
 
         { /* Deck 3: Brand */ }
         <div className={styles['app-footer__brand']}>
-          <img src="/images/baythium-ecosystem-2.svg" alt={AppSettings['company-name']}/>
+          <img src={AppSettings.prefix + '/images/baythium-ecosystem-2.svg'} alt={AppSettings['company-name']}/>
         </div>
 
         { /* Deck 4: Copyright */ }

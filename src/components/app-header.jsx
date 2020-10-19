@@ -47,7 +47,7 @@ const Header = () => {
           <div>
             <div className={styles['app-header__brand']}>
               <a href={AppSettings.prefix + '/'}>
-                <img src="/images/baythium-ecosystem-1.svg" alt={AppSettings.companyName}/>
+                <img src={AppSettings.prefix + '/images/baythium-ecosystem-1.svg'} alt={AppSettings.companyName}/>
                 {AppSettings.name}
               </a>
             </div>
