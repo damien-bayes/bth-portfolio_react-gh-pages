@@ -1,5 +1,7 @@
 /**
  * Route: Service
+ * 
+ * File: /src/pages/service.jsx
  */
 
 const services = [

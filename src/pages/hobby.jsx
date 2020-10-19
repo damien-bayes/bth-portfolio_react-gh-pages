@@ -1,5 +1,7 @@
 /**
  * Route: Hobby
+ * 
+ * File: /src/pages/hobby.jsx
  */
 
 const Hobbie = () => {

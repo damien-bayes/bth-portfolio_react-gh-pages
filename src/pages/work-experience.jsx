@@ -1,5 +1,7 @@
 /**
  * Route: Work Experience
+ * 
+ * File: /src/pages/work-experience.jsx
  */
 
 const workExperienceList = [

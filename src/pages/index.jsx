@@ -1,5 +1,7 @@
 /**
  * Route: Home
+ * 
+ * File: /src/pages/index.jsx
  */
 
 /***********************/

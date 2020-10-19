@@ -1,3 +1,7 @@
+/**
+ * File: /src/pages/404.jsx
+ */
+
 'use strict';
 
 /*******************/

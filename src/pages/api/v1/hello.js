@@ -1,5 +1,5 @@
 /**
- * File: /src/pages/api/v1/hello.jsx
+ * File: /src/pages/api/v1/hello.js
  */
 
 'use strict';

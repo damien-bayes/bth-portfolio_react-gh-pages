@@ -1,5 +1,7 @@
 /**
  * Settings: App
+ * 
+ * File: /src/settings/app.js
  */
 
 'use strict';
