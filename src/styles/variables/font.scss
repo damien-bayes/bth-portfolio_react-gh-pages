@@ -1,0 +1,107 @@
+/**
+ * Font
+ *
+ * File: /src/styles/variables/font.scss
+ * Project: Baythium Aspectus
+ * Organization: Baythium Ecosystem: https://baythium.com
+ *
+ * RULES:
+ * 1. You HAVE TO follow the "BEM" naming conventions for each global variable you use
+ */
+
+/*
+ * NOTE: The correct way to address the space between text lines is with the margins CSS property
+ * and not by adding <br> elements or empty paragraphs between them
+ *
+ * NOTE: Font is a group dictating the general characteristics. It is the overall style and weight of the text and
+ * letter. It deals with single characters, spaces, words and so on
+ *
+ * EXTRA RULES:
+ * - Font-size and family must be declared, otherwise the overall will be ignored
+ * - Font-family must be declared last
+ * - Every other font property can be declared without order, as long as it come before font-size
+ * - Remember to add spaces between each property, to enclose the exact name families between double quotes, and
+ * to divide a generic one with a comma
+ */
+
+ @import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=cyrillic");
+
+ /* FONT FAMILY */
+ 
+ $font__family--monospace:
+  "SFMono-Regular",
+  "Menlo",
+  "Monaco",
+  "Consolas",
+  "Liberation Mono",
+  "Courier New",
+  monospace !default;
+ 
+ $font__family--base:
+  "Arial",
+  "Segoe UI",
+  "sans-serif",
+  "Georgia",
+  "Times New Roman",
+  "Times",
+  "serif",
+  "-apple-system",
+  "BlinkMacSystemFont",
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+ 
+ /* FONT SIZE */
+ 
+ /*
+  * NOTE: We assume that the browser defaults are typically `16px`
+  *
+  * NOTE: An "em" is a worldwide standard, defining the 16pt value
+  *
+  * NOTE: Rem stands for Root em, specifying that the element and sizing is indeed tied to the root of our document
+  */
+ $font__size--xl: 24px !default;
+ $font__size--lg: 18px !default;
+ 
+ $font__size--base: 16px !default;
+ 
+ $font__size--sm: 14px !default;
+ $font__size--xs: 12px !default;
+ 
+ $font__size--no: 0px !default;
+ 
+ /* Size for headers */
+ $font__size--h1: 36px !default;
+ $font__size--h2: 32px !default;
+ $font__size--h3: 24px !default;
+ $font__size--h4: 20px !default;
+ $font__size--h5: 18px !default;
+ $font__size--h6: $font__size--base !default;
+ 
+ /* FONT WEIGHT */
+ 
+ /*
+  * NOTE: Font-weight allows you to choose the weight of the font, with values as light, lighter, and normal,
+  * 100, 200, 300, 400, 500, 600, 700, 800, 900, bold, and bolder
+  *
+  * NOTE: Numbers of course refer to specified weights of your chosen typeface, but we'll generally end up using
+  * bold or light, never lighter or bolder.
+  */
+ $font__weight--100: 100 !default;
+ $font__weight--200: 200 !default;
+ $font__weight--300: 300 !default;
+ $font__weight--400: 400 !default;
+ $font__weight--500: 500 !default;
+ $font__weight--600: 600 !default;
+ $font__weight--700: 700 !default;
+ $font__weight--800: 800 !default;
+ $font__weight--900: 900 !default;
+ 
+ $font__weight--lighter: $font__weight--200 !default;
+ $font__weight--light: $font__weight--300 !default;
+ 
+ $font__weight--base: $font__weight--400 !default;
+ 
+ $font__weight--bold: $font__weight--700 !default;
+ $font__weight--bolder: $font__weight--800 !default;

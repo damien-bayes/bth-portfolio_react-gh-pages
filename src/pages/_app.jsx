@@ -12,7 +12,14 @@ import App from 'next/app';
 /*******************/
 /* PROJECT IMPORTS */
 /*******************/
-// import '@damien-bayes/baythium-aspectus_package/dist/baythium-aspectus.css';
+
+/*
+ Styles
+
+ @see: https://nextjs.org/docs/basic-features/built-in-css-support
+*/
+import '@damien-bayes/baythium-aspectus_package/dist/baythium-aspectus.css';
+import '../styles/custom-baythium-aspectus.scss';
 
 /*****************************************************************************/
 

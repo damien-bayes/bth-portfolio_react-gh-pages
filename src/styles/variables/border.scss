@@ -1,0 +1,47 @@
+/**
+ * Border
+ *
+ * File: /src/styles/variables/border.scss
+ * Project: Baythium Aspectus
+ * Organization: Baythium Ecosystem: https://baythium.com
+ *
+ * RULES:
+ * 1. You HAVE TO follow the "BEM" naming conventions for each global variable you use
+ */
+ 
+/* BORDER RADIUS */
+
+/* Variant 1 (Default border radius) */
+$border__radius--max: 100% !default;
+$border__radius--half: 50% !default;
+
+$border__radius--xl: 32px !default;
+$border__radius--lg: 24px !default;
+
+$border__radius--base: 16px !default;
+
+$border__radius--sm: 8px !default;
+$border__radius--xs: 2px !default;
+
+$border__radius--min: 0% !default;
+
+/* Variant 2 (Binary border radius) */
+$border__radius--bin-0: 0px !default;
+$border__radius--bin-1: 1px !default;
+$border__radius--bin-2: 2px !default;
+$border__radius--bin-4: 4px !default;
+$border__radius--bin-8: 8px !default;
+$border__radius--bin-16: 16px !default;
+
+/* BORDER WIDTH */
+
+/* Variant 1 (Default border width) */
+$border__width--no: 0px !default;
+$border__width--base: 1px !default;
+
+/* Variant 2 (Binary border width) */
+$border__width--bin-0: 0px !default;
+$border__width--bin-1: 1px !default;
+$border__width--bin-2: 2px !default;
+$border__width--bin-4: 4px !default;
+$border__width--bin-8: 8px !default;

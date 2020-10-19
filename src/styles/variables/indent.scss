@@ -1,0 +1,50 @@
+/**
+ * Indent
+ *
+ * File: /src/styles/variables/indent.scss
+ * Project: Baythium Aspectus
+ * Organization: Baythium Ecosystem: https://baythium.com
+ *
+ * RULES:
+ * 1. You HAVE TO follow the "BEM" naming conventions for each global variable you use
+ */
+
+/* Variant 1 (Default indents) */
+$indent--xl: 32px !default;
+$indent--lg: 24px !default;
+
+$indent--base: 16px !default;
+
+$indent--sm: 8px !default;
+$indent--xs: 2px !default;
+
+$indent--no: 0px !default;
+
+/* Variant 2 (Binary indents) */
+$indent--bin-0: 0px !default;
+$indent--bin-1: 1px !default;
+$indent--bin-2: 2px !default;
+$indent--bin-4: 4px !default;
+$indent--bin-8: 8px !default;
+$indent--bin-16: 16px !default;
+$indent--bin-32: 32px !default;
+$indent--bin-64: 64px !default;
+$indent--bin-128: 128px !default;
+$indent--bin-256: 256px !default;
+$indent--bin-512: 512px !default;
+
+$indent__range: () !default;
+
+/* stylelint-disable-next-line scss/dollar-variable-default */
+$indent__range: map-merge(
+  (
+    0: 0px,
+    1: 1px,
+    2: 2px,
+    3: 4px,
+    4: 8px,
+    5: 16px,
+    6: 32px
+  ),
+  $indent__range
+);

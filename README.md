@@ -1,5 +1,14 @@
 # Baythium Portfolio - Github Pages
 
+## Status
+
+![GitHub](https://img.shields.io/github/license/damien-bayes/bth-portfolio_gh-pages?color=blueviolet&label=License&style=flat-square)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/damien-bayes/bth-portfolio_gh-pages?color=blueviolet&label=Version&style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/damien-bayes/bth-portfolio_gh-pages?color=blueviolet&label=GitHub%20Stars&style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/damien-bayes/bth-portfolio_gh-pages?color=blueviolet&label=Issues&style=flat-square)
+![Website](https://img.shields.io/website?down_color=red&label=Website&style=flat-square&up_color=blueviolet&url=https://damien-bayes.github.io/bth-portfolio_gh-pages)
+![GitHub last commit](https://img.shields.io/github/last-commit/damien-bayes/bth-portfolio_gh-pages?color=blueviolet&label=Last%20Commit&style=flat-square)
+
 ## Deployment
 
 ```

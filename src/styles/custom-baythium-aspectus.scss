@@ -1,5 +1,13 @@
-// @import "variables/all";
+/**
+ * Custom Baythium Aspectus
+ *
+ * File: /src/styles/custom-baythium-aspectus.scss
+ * Project: Baythium Portfolio (Github Pages)
+ * Organization: Baythium Ecosystem: https://baythium.com
+ */
 
-.body {
-  background-color: red;
+@import "variables/all";
+
+body {
+  background-color: $color--white;
 }

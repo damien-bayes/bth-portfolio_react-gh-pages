@@ -1,0 +1,93 @@
+/**
+ * App Header
+ *
+ * File: /src/styles/components/app-header.module.scss
+ * Project: Baythium Portfolio (Github Pages)
+ * Organization: Baythium Ecosystem: https://baythium.com
+ */
+
+ @import "../variables/all.scss";
+
+ .app-header {
+   color: $color--black;
+   background-color: $color--white;
+   overflow: hidden;
+   z-index: 0;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: $indent--base;
+ 
+   &__system {
+     display: flex;
+     flex-direction: column;
+     padding: $indent--bin-4 $indent--bin-8;
+ 
+     a {
+       text-decoration: none;
+       font-size: $font__size--sm;
+ 
+       &:not(:last-of-type) { margin-right: $indent--sm; }
+     }
+   }
+ 
+   &__default {
+     display: flex;
+     border-bottom: 1px solid $color--gray-200;
+     
+     > div { flex: 50% 0 1; }
+ 
+     > div:last-of-type {
+       display: flex;
+       justify-content: flex-end;
+     }
+   }
+ 
+   &__brand {
+     display: flex;
+     align-items: center;
+     padding: $indent--base;
+ 
+     img {
+       width: 32px;
+       height: 32px;
+       margin-right: $indent--base;
+       transition: -webkit-filter 200ms;
+       transition: filter 200ms;
+     }
+ 
+     a {
+       display: flex;
+       align-items: center;
+       font-weight: bold;
+       text-decoration: none;
+ 
+       &:hover img {
+         -webkit-filter: brightness(110%) contrast(110%);
+         filter: brightness(110%) contrast(110%);
+       }
+     }
+   }
+ 
+   &__parallelogram {
+     position: relative;
+     background-color: $color--primary;
+     color: $color--white;
+     background-color: $color--primary;
+     z-index: 0;
+     padding: $indent--base;
+     display: flex;
+     align-items: center;
+ 
+     &::before {
+       position: absolute;
+       left:-24px;
+       top: 0;
+       content: "";
+       width: 50%;
+       height: 100%;
+       transform: skew(20deg);
+       background-color: $color--primary;
+       z-index: -1;
+     }
+   }
+ }
