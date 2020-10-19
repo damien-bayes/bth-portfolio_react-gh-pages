@@ -28,11 +28,19 @@ jobs:
           persist-credentials: false
 
       # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-      - name: 🔧 Install and Build
+      - name: 🔧 Install and build
         run: |
           npm install
           npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /bth-portfolio_gh-pages
+      - name: Export the app to static HTML
+        run: |
           npm run export
+        env:
+          NEXT_PUBLIC_BASE_PATH: /bth-portfolio_gh-pages
+      - name: Create
+          touch ./out/.nojekyll
 
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2

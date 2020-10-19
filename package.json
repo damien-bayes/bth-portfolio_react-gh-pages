@@ -17,7 +17,9 @@
     "start": "next start",
     "export": "next export",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "next:init": "create-next-app"
+    "next:init": "create-next-app",
+    "git": "git add . && git commit -m",
+    "postgit": "git push --all"
   },
   "repository": {
     "type": "git",

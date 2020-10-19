@@ -11,7 +11,7 @@ import Link from 'next/link';
 const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1>Home Page 1</h1>
       <p>Description</p>
 
       <Link href="/work-experience">
