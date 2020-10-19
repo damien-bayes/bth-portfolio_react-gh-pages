@@ -4,6 +4,8 @@
  * File: /src/pages/index.jsx
  */
 
+'use strict';
+
 /***********************/
 /* THIRD-PARTY IMPORTS */
 /***********************/
@@ -29,7 +31,6 @@ const Home = () => {
         <a>Work Experience</a>
       </Link>
     </Layout>
-
   )
 }
 

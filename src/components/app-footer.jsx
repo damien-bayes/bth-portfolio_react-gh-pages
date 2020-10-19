@@ -37,13 +37,17 @@ const Footer = () => {
 
         { /* Deck 4: Copyright */ }
         <div className={styles['app-footer__copyright']}>
-          <p>&copy; {new Date().getFullYear()} {AppSettings['company-name']}</p>
-          <p>Copyright</p>
+          <p>&copy; {new Date().getFullYear()} {AppSettings['companyName']}</p>
+          <p>All product names, trademarks and registered trademarks are property of their respective owners.</p>
+          <p>Use of these names, trademarks and brands does not imply endorsement.</p>
         </div>
 
         { /* Deck 5: Synthesis */ }
         <div className={[styles['app-footer__synthesis'], 'text-sm-1--right'].join(' ')}>
-          <ul></ul>
+          <ul>
+            <li>Product Name: <span>{AppSettings.name}</span></li>
+            <li>Client Version: <span>{AppSettings.version}</span></li>
+          </ul>
         </div>
       </div>
     </footer>

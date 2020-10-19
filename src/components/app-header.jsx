@@ -14,7 +14,7 @@ import React, {
 /*******************/
 
 /* Modular styles */
-import styles from '../styles/components/app-footer.module.scss';
+import styles from '../styles/components/app-header.module.scss';
 import navigationStyles from '../styles/components/navigation.module.scss';
 
 /* Settings */
@@ -46,8 +46,8 @@ const Header = () => {
         <div className={styles['app-header__default']}>
           <div>
             <div className={styles['app-header__brand']}>
-              <a href="/">
-                <img src="/images/baythium-ecosystem-1.svg" alt=""/>
+              <a href={AppSettings.prefix + '/'}>
+                <img src="/images/baythium-ecosystem-1.svg" alt={AppSettings.companyName}/>
                 {AppSettings.name}
               </a>
             </div>

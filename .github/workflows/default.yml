@@ -44,6 +44,7 @@ jobs:
       - name: 🔧 Install and build
         run: |
           npm install
+          npm audit fix
           npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /bth-portfolio_gh-pages

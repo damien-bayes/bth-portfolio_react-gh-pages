@@ -4,6 +4,8 @@
  * @see: https://nextjs.org/docs/advanced-features/custom-app
  */
 
+'use strict';
+
 /***********************/
 /* THIRD-PARTY IMPORTS */
 /***********************/

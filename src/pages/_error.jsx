@@ -8,6 +8,8 @@
  * @see: https://next-site-git-new-docs.zeit.now.sh/docs/advanced-features/custom-error-page
  */
 
+'use strict';
+
 /**
  * 
  * @param {*} param0 

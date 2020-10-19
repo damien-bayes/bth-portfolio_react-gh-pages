@@ -4,6 +4,17 @@
  * File: /src/pages/service.jsx
  */
 
+'use strict';
+
+/*******************/
+/* PROJECT IMPORTS */
+/*******************/
+
+/* Layouts */
+import Layout from '../components/layouts/base';
+
+/*****************************************************************************/
+
 const services = [
   {
     id: 1,
@@ -19,10 +30,12 @@ const services = [
 
 const Service = () => {
   return (
-    <div>
-      <h1>Service Page</h1>
-      <p>Description</p>
-    </div>
+    <Layout title="Services">
+      <div>
+        <h1>Service Page</h1>
+        <p>Description</p>
+      </div>
+    </Layout>
   )
 }
 

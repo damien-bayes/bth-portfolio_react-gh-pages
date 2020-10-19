@@ -1,0 +1,89 @@
+/**
+ * Navigation
+ *
+ * File: /src/styles/components/navigation.module.scss
+ * Project: Baythium Portfolio (Github Pages)
+ * Organization: Baythium Ecosystem: https://baythium.com
+ */
+
+ @import "../variables/all.scss";
+
+ .navigation {
+   display: flex;
+   color: $color--gray-800;
+   
+   &__list {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     display: flex;
+   }
+ 
+   &__button:first-of-type {
+     border-right: 1px solid $color--gray-300;
+     margin-right: $indent--xs;
+   }
+ 
+   &__button:last-of-type {
+     border-left: 1px solid $color--gray-300;
+     margin-left: $indent--xs;
+   }
+ 
+   &__wrapper {
+     flex: 1;
+     overflow-x: auto;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+   }
+ 
+   /* hide horizontal scrollbar */
+   -ms-overflow-style: none; 
+   ::-webkit-scrollbar { 
+     width: 0; 
+   }
+ 
+   &__button {
+     background: none;
+     border: 0;
+     padding: 0 $indent--sm;
+     outline: 0;
+     cursor: pointer;
+     text-align: center;
+     display: flex;
+     vertical-align: middle;
+     color: inherit;
+     user-select: none;
+     transition: transform .3s ease-in;
+     transform: scale(1) translate3d(0, 0, 0);
+     overflow: hidden;
+     position: relative;
+     font-size: $font__size--xl;
+   }
+ 
+   &__link {
+     text-align: center;
+     white-space: nowrap;
+     text-decoration: none;
+     padding: $indent--bin-8 $indent--base;
+     border-bottom: 1px solid transparent;
+ 
+     &--active {
+       background-color: $color--gray-100;
+     }
+ 
+     &:hover {
+       border-bottom: 1px solid $color--secondary;
+     }
+   }
+ 
+   &__button,
+   &__link {
+     color: inherit;
+   }
+ 
+   &__item {
+     margin-right: $indent--xl;
+     display: flex;
+     align-items: center;
+   }
+ }

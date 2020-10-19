@@ -4,6 +4,17 @@
  * File: /src/pages/work-experience.jsx
  */
 
+'use strict';
+
+/*******************/
+/* PROJECT IMPORTS */
+/*******************/
+
+/* Layouts */
+import Layout from '../components/layouts/base';
+
+/*****************************************************************************/
+
 const workExperienceList = [
   {
     id: 1,
@@ -35,10 +46,12 @@ const workExperienceList = [
 
 const WorkExperience = () => {
   return (
-    <div>
-      <h1>Work Experience</h1>
-      <p>Description</p>
-    </div>
+    <Layout title="Work Experience">
+      <div>
+        <h1>Work Experience</h1>
+        <p>Description</p>
+      </div>
+    </Layout>
   )
 }
 
