@@ -25,14 +25,21 @@ jobs:
         node-version: [12.x]
     steps:
       - name: 🛎️ Checkout
-         # If you're using actions/checkout@v2 you must set persist-credentials
-         # to false in most cases for the deployment to work correctly
+         # NOTE: If you're using actions/checkout@v2 you must set
+         # persist-credentials to false in most cases for the deployment to
+         # work correctly
         uses: actions/checkout@v2
         with:
           persist-credentials: false
 
       - name: Authenticate with GitHub package registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.TOKEN }}" > .npmrc
+
+      - name: Use required JavaScript runtime environment
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+          registry-url: https://npm.pkg.github.com/
 
       - name: 🔧 Install and build
         run: |
