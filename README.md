@@ -20,3 +20,11 @@ npm run git -- "Message of the commit"
 2. https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix
 3. https://nextjs.org/docs/api-reference/next.config.js/basepath
 4. https://www.youtube.com/c/BrunoAntunesPT/videos
+
+###### Assessment Tools
+1. https://developers.google.com/speed/pagespeed/insights
+2. https://search.google.com/test/mobile-friendly
+
+###### Features
+2. https://getform.io/
+3. https://getform.io/docs/collecting-submissions/spam-filtering-with-recaptcha

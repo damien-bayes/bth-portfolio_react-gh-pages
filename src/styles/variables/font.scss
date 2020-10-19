@@ -24,10 +24,12 @@
  * to divide a generic one with a comma
  */
 
- @import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=cyrillic");
+@charset "utf-8";
 
- /* FONT FAMILY */
- 
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=cyrillic");
+
+/* FONT FAMILY */
+
  $font__family--monospace:
   "SFMono-Regular",
   "Menlo",

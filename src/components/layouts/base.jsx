@@ -31,6 +31,8 @@ import AppSettings from '../../settings/app';
 import AppHeader from '../app-header';
 import AppFooter from '../app-footer';
 
+import Sidebar from '../sidebar';
+
 /*****************************************************************************/
 
 const Layout = (props) => (
@@ -67,10 +69,13 @@ const Layout = (props) => (
     </Head>
 
     <AppHeader/>
-    <main className="container">
-      {/* Render the page contents using {props.children} */}
-      {props.children}
-    </main>
+    <div className="container container--horizontal-aligned">
+      <main>
+        {/* Render the page contents using {props.children} */}
+        {props.children}
+      </main>
+      <Sidebar/>
+    </div>
     <AppFooter/>
   </Fragment>
 );
