@@ -40,6 +40,7 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /bth-portfolio_gh-pages
       - name: Create
+        run: |
           touch ./out/.nojekyll
 
       - name: 🚀 Deploy
