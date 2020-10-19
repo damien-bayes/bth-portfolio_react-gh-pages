@@ -8,16 +8,26 @@
 
 import Link from 'next/link';
 
+/*******************/
+/* PROJECT IMPORTS */
+/*******************/
+
+/* Layouts */
+import Layout from '../components/layouts/base';
+
+/*****************************************************************************/
+
 const Home = () => {
   return (
-    <div>
+    <Layout>
       <h1>Home Page 1</h1>
       <p>Description</p>
 
       <Link href="/work-experience">
         <a>Work Experience</a>
       </Link>
-    </div>
+    </Layout>
+
   )
 }
 
