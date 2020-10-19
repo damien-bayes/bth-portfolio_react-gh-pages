@@ -15,6 +15,7 @@ const app = {
   name: 'Baythium Portfolio',
   version: pkg.version,
   companyName: 'Baythium Ecosystem',
+  prefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
 }
 
 export default app;

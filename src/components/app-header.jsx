@@ -64,10 +64,10 @@ const Header = () => {
           <div className={navigationStyles['navigation__wrapper']}>
             <ul className={navigationStyles['navigation__list']}>
               <li className={navigationStyles['navigation__item']} data-navigation-id="1">
-                <a className={navigationStyles['navigation__link']} href="/">Home</a>
+                <a className={navigationStyles['navigation__link']} href={AppSettings.prefix + '/'}>Home</a>
               </li>
               <li className={navigationStyles['navigation__item']} data-navigation-id="2">
-                <a className={navigationStyles['navigation__link']} href="/about">About</a>
+                <a className={navigationStyles['navigation__link']} href={AppSettings.prefix + '/about'}>About</a>
               </li>
             </ul>
           </div>
