@@ -19,7 +19,7 @@ import Layout from '../components/layouts/base';
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout title="Home">
       <h1>Home Page 1</h1>
       <p>Description</p>
 
