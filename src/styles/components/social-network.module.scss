@@ -1,0 +1,48 @@
+@import "../variables/all.scss";
+
+.social-networks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__img-wrapper {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border__radius--sm;
+
+    img {
+      filter: opacity(50%);
+      width: 60%;
+      margin-bottom: $indent__bin-4;
+    }
+  }
+
+  // > &__item {}
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: $font__size--sm;
+    overflow: hidden;
+
+    color: $color--gray-600;
+
+    &:hover {
+      color: $color--secondary;
+      
+      .social-networks__img-wrapper {
+        background-color: $color--secondary;
+      }
+
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+}

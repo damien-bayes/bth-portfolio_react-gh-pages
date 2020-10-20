@@ -37,8 +37,8 @@ const Home = () => {
           <div className="card__body">
 
             <div className="row">
-              <div className="column--4">
-                <img className={styles['personality-card__avatar']} src={AppSettings.prefix + '/images/nerd.svg'} alt={AppSettings.name}/>
+              <div className={[styles['personality-card__avatar'], 'column--4'].join(' ')}>
+                <img src={AppSettings.prefix + '/images/nerd.svg'} alt={AppSettings.name}/>
               </div>
               <div className="column--8">
                 <Link className="card__link" href="javascript:">
@@ -54,8 +54,8 @@ const Home = () => {
             </div>
 
             <div className="button-collection button-collection--left-aligned">
-              <button className="button button--outlined-primary button--rippled mr--5">Leave a message</button>
-              <button className="button button--primary button--rippled mr--5">Download CV</button>
+              <button className="button button--outlined-primary button--rippled button--sm mr--5">Leave a message</button>
+              <button className="button button--primary button--rippled button--sm mr--5">Download CV</button>
             </div>
 
             <div className="personality-card__summary">
@@ -63,7 +63,7 @@ const Home = () => {
               <p>I maintained IBM DataPower gateway platforms and have been developing web applications mostly as a front-end developer using modern frameworks like Vue, React and Angular.</p>
               <p>In addition, I really like using Node (Express.js) that accelerates my productivity as never before, however if there is really no need to use either a library or framework, then I don't. Frankly, I don't like to complicate things with 3rd party libraries and I tend to solve the problems using custom solutions and methods...</p>
               <Link href="/me">
-                <a className="button button--primary button--xs button--rippled">Read</a>
+                <a className="button button--primary button--rippled button--sm">Read</a>
               </Link>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Home = () => {
             <div className="row">
               <div className="column__sm--4 text--center">
                 <Link href="/hiring">
-                  <a className="button button--secondary mb--2 button--rippled">Why should you hire me?</a>
+                  <a className="button button--secondary mb--2 button--rippled button--sm">Why should you hire me?</a>
                 </Link>
               </div>
             </div>
@@ -97,7 +97,7 @@ const Home = () => {
                 </div>
 
                 <Link href="/work-experience">
-                  <a className="button button--primary button--xs button--rippled">View All</a>
+                  <a className="button button--primary button--rippled button--sm">View All</a>
                 </Link>
               </div>
             </Link>
@@ -117,7 +117,7 @@ const Home = () => {
                 </div>
 
                 <Link href="/service">
-                  <a className="button button--primary button--xs button--rippled">View All</a>
+                  <a className="button button--primary button--rippled button--sm">View All</a>
                 </Link>
 
               </div>
