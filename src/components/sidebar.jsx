@@ -25,29 +25,53 @@ import AppSettings from '../settings/app';
 import styles from '../styles/components/sidebar.module.scss';
 
 import socialNetworkStyles from '../styles/components/social-network.module.scss';
+import twoLinedTextStyles from '../styles/components/two-lined-text.module.scss';
+import seriesStyles from '../styles/components/series.module.scss';
 
 /*****************************************************************************/
 
-const experienceLevels = [
-  'Junior',
-  'Middle',
-  'Senior',
-  'Lead',
-  'Architect',
-  'Principal',
-];
+const jobPosition = {
+  name: 'Web Application Software Engineer',
+
+  levels: [
+    {
+      name: 'Junior',
+      isActive: false,
+    },
+    {
+      name: 'Middle',
+      isActive: false,
+    },
+    {
+      name: 'Senior',
+      isActive: true,
+    },
+    {
+      name: 'Lead',
+      isActive: false,
+    },
+    {
+      name: 'Architect',
+      isActive: false,
+    },
+    {
+      name: 'Principal',
+      isActive: false,
+    }
+  ]
+}
 
 const emails = [
   {
-    email: 'damien.bayes.db@gmail.com',
+    address: 'damien.bayes.db@gmail.com',
     isPrimary: true,
   },
   {
-    email: 'baythium@gmail.com',
+    address: 'baythium@gmail.com',
     isPrimary: false,
   },
   {
-    email: 'damien.bayes@baythium.com',
+    address: 'damien.bayes@baythium.com',
     isPrimary: false,
   }
 ];
@@ -90,6 +114,44 @@ const socialNetworks = [
   }
 ];
 
+const workdays = [
+  {
+    fullName: 'Sunday',
+    shortName: 'Sun',
+    isActive: false,
+  },
+  {
+    fullName: 'Monday',
+    shortName: 'Mon',
+    isActive: true,
+  },
+  {
+    fullName: 'Tuesday',
+    shortName: 'Tue',
+    isActive: true,
+  },
+  {
+    fullName: 'Wednesday',
+    shortName: 'Wed',
+    isActive: true,
+  },
+  {
+    fullName: 'Thursday',
+    shortName: 'Thu',
+    isActive: true,
+  },
+  {
+    fullName: 'Friday',
+    shortName: 'Fri',
+    isActive: true,
+  },
+  {
+    fullName: 'Saturday',
+    shortName: 'Sat',
+    isActive: false,
+  }
+]
+
 const Sidebar = () => {
   return (
     <aside className={styles['sidebar']}>
@@ -110,15 +172,13 @@ const Sidebar = () => {
                     socialNetworks.map((socialNetwork, index) => {
                       return (
                         <li className={socialNetworkStyles['social-networks__item']} key={index}>
-                          <Link href={socialNetwork.url}>
-                            <a className={socialNetworkStyles['social-networks__link']}>
-                              <div className={socialNetworkStyles['social-networks__img-wrapper']}>
-                                <img src={AppSettings.prefix + socialNetwork.iconUrl} alt={socialNetwork.name}/>
-                              </div>
-                              
-                              {socialNetwork.name}
-                            </a>
-                          </Link>
+                          <a href={socialNetwork.url} rel="noreferrer" target="_blank" className={socialNetworkStyles['social-networks__link']}>
+                            <div className={socialNetworkStyles['social-networks__img-wrapper']}>
+                              <img src={AppSettings.prefix + socialNetwork.iconUrl} alt={socialNetwork.name}/>
+                            </div>
+                            
+                            {socialNetwork.name}
+                          </a>
                         </li>
                       )
                     })
@@ -137,10 +197,24 @@ const Sidebar = () => {
               <div>
                 {/* Headline */}
                 <div className="headline headline--labeled">
-                  <h2 className="headline__title">Language Skills<span className="badge badge--primary">3</span></h2>
+                  <h2 className="headline__title">Language Skills<span className="badge badge--primary">{languages.length}</span></h2>
                 </div>
 
-                <p>Additional information</p>
+                <ul>
+                  {
+                    languages.map((language, index) => {
+                      return (
+                        <li key={index}>
+                          <div className={twoLinedTextStyles['two-lined-text']}>
+                            <p className={twoLinedTextStyles['two-lined-text__chain']}>{language.level}</p>
+                            <h6 className={twoLinedTextStyles['two-lined-text__anchor']}>{language.name}</h6>
+                          </div>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+
               </div>
             </Link>
           </div>
@@ -153,11 +227,25 @@ const Sidebar = () => {
               <div>
                 {/* Headline */}
                 <div className="headline headline--labeled">
-                  <h2 className="headline__title">Email<span className="badge badge--primary">2</span></h2>
+                  <h2 className="headline__title">Email<span className="badge badge--primary">{emails.length}</span></h2>
                   <p className="headline__description">Don't feel hesitate to contact me</p>
                 </div>
 
-                <p>Additional information</p>
+                <ul>
+                  {
+                    emails.map((email, index) => {
+                      return (
+                        <li key={index}>
+                          <div className={twoLinedTextStyles['two-lined-text']}>
+                            <p className={twoLinedTextStyles['two-lined-text__chain']}>{email.isPrimary ? 'Primary' : 'Secondary'}</p>
+                            <h6 className={twoLinedTextStyles['two-lined-text__anchor']}>{email.address}</h6>
+                          </div>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+
               </div>
             </Link>
           </div>
@@ -171,10 +259,18 @@ const Sidebar = () => {
                 {/* Headline */}
                 <div className="headline headline--labeled">
                   <h2 className="headline__title">Job Position</h2>
-                  <p className="headline__description">Web Application Software Engineer</p>
+                  <p className="headline__description">{jobPosition.name}</p>
                 </div>
 
-                <p>Additional information</p>
+                <ul className={seriesStyles['series']}>
+                  {
+                      jobPosition.levels.map((level, index) => {
+                        return (
+                          <li key={index} className={[level.isActive ? seriesStyles['series__item--active'] : null, seriesStyles['series__item']].join(' ')}>{level.name}</li>
+                        )
+                      })
+                    }
+                </ul>
               </div>
             </Link>
           </div>
@@ -191,7 +287,15 @@ const Sidebar = () => {
                   <p className="headline__description">Full-time and 5 days a week</p>
                 </div>
 
-                <p>Additional information</p>
+                <ul className={seriesStyles['series']}>
+                  {
+                      workdays.map((workday, index) => {
+                        return (
+                          <li key={index} className={[workday.isActive ? seriesStyles['series__item--active'] : null, seriesStyles['series__item']].join(' ')}>{workday.shortName}</li>
+                        )
+                      })
+                    }
+                </ul>
               </div>
             </Link>
           </div>

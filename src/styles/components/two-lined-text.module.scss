@@ -1,0 +1,19 @@
+@import "../variables/all.scss";
+
+.two-lined-text {
+  margin-bottom: $indent--base;
+
+  &__anchor,
+  &__chain {
+    margin: 0;
+  }
+
+  &__anchor {
+    font-weight: normal;
+  }
+
+  &__chain {
+    color: $color--gray-600;
+    font-size: $font__size--xs;
+  }
+}
