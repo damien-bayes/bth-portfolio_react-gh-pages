@@ -113,7 +113,7 @@ const Sidebar = () => {
                           <Link href={socialNetwork.url}>
                             <a className={socialNetworkStyles['social-networks__link']}>
                               <div className={socialNetworkStyles['social-networks__img-wrapper']}>
-                                <img src={socialNetwork.iconUrl} alt={socialNetwork.name}/>
+                                <img src={AppSettings.prefix + socialNetwork.iconUrl} alt={socialNetwork.name}/>
                               </div>
                               
                               {socialNetwork.name}

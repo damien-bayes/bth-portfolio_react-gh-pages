@@ -50,7 +50,7 @@ const Custom404 = () => {
                   <p className="headline__description">Sorry, but the page you are looking for is not found. Please, make sure you have typed the correct URL</p>
                 </div>
 
-                <div class="btn-collection btn-collection--center-aligned">
+                <div className="btn-collection btn-collection--center-aligned">
                   <Link href="/">
                     <a className="button button--primary button--sm button--rippled mr--4">Back To Home</a>
                   </Link>
