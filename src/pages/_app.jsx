@@ -20,7 +20,7 @@ import App from 'next/app';
 
  @see: https://nextjs.org/docs/basic-features/built-in-css-support
 */
-import '@damien-bayes/baythium-aspectus_package/dist/baythium-aspectus.css';
+import '@damien-bayes/bth-aspectus_pkg/dist/baythium-aspectus.css';
 import '../styles/custom-baythium-aspectus.scss';
 
 /*****************************************************************************/

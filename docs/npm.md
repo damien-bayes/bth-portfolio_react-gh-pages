@@ -1,8 +1,7 @@
 # NPM
 
 ```bash
-# Install eleventy (static site generator) globally
-npm install -g @11ty/eleventy
+npm install @damien-bayes/bth-aspectus_pkg@1.0.22
 
 # Update baythium packages from the repositories (optional)
 # npm update @baythium/baythium-aspectus_package --save

@@ -1,10 +1,10 @@
 {
   "name": "bth-portfolio_gh-pages",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Baythium portfolio based on Github pages",
   "main": "next.config.js",
   "dependencies": {
-    "@damien-bayes/baythium-aspectus_package": "^1.0.20",
+    "@damien-bayes/bth-aspectus_pkg": "^1.0.22",
     "next": "9.5.5",
     "react": "16.14.0",
     "react-dom": "16.14.0"
