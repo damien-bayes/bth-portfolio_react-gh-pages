@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4A4C4E;}
+	.st1{fill:#F6D365;}
+	.st2{fill:#297D6B;}
+	.st3{fill:#1E6159;}
+	.st4{fill:#D33C3A;}
+	.st5{fill:#FF4C39;}
+</style>
+<g id="brand">
+	<polygon class="st0" points="397,504 115,504 34,423 477,423 	"/>
+	<polygon class="st0" points="155,343 34,343 316,9 437,9 	"/>
+	<polygon class="st1" points="316,9 477,423 397,504 250,87 	"/>
+</g>
+<g id="leaves">
+	<g>
+		<path class="st2" d="M460.8,366c0,0-31.8,17.4-57.9,4.9c0,0-4.5,61.6-48.8,34.8c0,0,6.8,42.7-12.1,65.1L460.8,366z"/>
+		<path class="st3" d="M342,470.8c0,0,31.8-17.4,57.9-4.9c0,0,4.5-61.6,48.8-34.8c0,0-6.8-42.7,12.1-65.1L342,470.8z"/>
+		<path class="st2" d="M505.4,469.5c0,0-35.5-7.4-47.2-33.9c0,0-43.5,43.9-59.7-5.3c0,0-22.6,36.9-51.5,41.6L505.4,469.5z"/>
+		<path class="st3" d="M347,471.9c0,0,35.5,7.4,47.2,33.9c0,0,43.5-43.9,59.7,5.3c0,0,22.6-36.9,51.5-41.6L347,471.9z"/>
+	</g>
+	<g>
+		<path class="st2" d="M259.1,398c0,0,16.4,9,29.9,2.5c0,0,2.3,31.9,25.2,18c0,0-3.5,22.1,6.3,33.7L259.1,398z"/>
+		<path class="st3" d="M320.5,452.2c0,0-16.4-9-29.9-2.5c0,0-2.3-31.9-25.2-18c0,0,3.5-22.1-6.3-33.7L320.5,452.2z"/>
+		<path class="st2" d="M236,451.6c0,0,18.3-3.8,24.4-17.5c0,0,22.5,22.7,30.9-2.7c0,0,11.7,19.1,26.6,21.5L236,451.6z"/>
+		<path class="st3" d="M317.9,452.8c0,0-18.3,3.8-24.4,17.5c0,0-22.5-22.7-30.9,2.7c0,0-11.7-19.1-26.6-21.5L317.9,452.8z"/>
+	</g>
+</g>
+<g id="balls">
+	<g>
+		<circle class="st4" cx="329.5" cy="433.5" r="30.5"/>
+		<circle class="st5" cx="321.6" cy="424.6" r="17.1"/>
+	</g>
+	<g>
+		<circle class="st4" cx="311.5" cy="473.9" r="30.5"/>
+		<circle class="st5" cx="303.7" cy="464.9" r="17.1"/>
+	</g>
+	<g>
+		<circle class="st4" cx="354.1" cy="474.5" r="30.5"/>
+		<circle class="st5" cx="346.3" cy="465.5" r="17.1"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"eamodio.gitlens",
+		"ms-azuretools.vscode-docker",
+		"ms-vscode.powershell",
+    "vscode-icons-team.vscode-icons",
+    "cssho.vscode-svgviewer"
+	],
+	"unwantedRecommendations": []
+}
