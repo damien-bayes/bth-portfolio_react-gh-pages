@@ -21,6 +21,7 @@ npm run git -- "Message of the commit"
 3. https://nextjs.org/docs/api-reference/next.config.js/basepath
 4. https://www.youtube.com/c/BrunoAntunesPT/videos
 5. https://nextjs.org/docs/basic-features/data-fetching
+6. https://create-react-app.dev/docs/deployment#github-pages
 
 ###### Assessment Tools
 1. https://developers.google.com/speed/pagespeed/insights
