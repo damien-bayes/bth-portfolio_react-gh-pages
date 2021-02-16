@@ -27,11 +27,13 @@ curl 'https://api.github.com/users/username'
 3. https://nextjs.org/docs/api-reference/next.config.js/basepath
 4. https://www.youtube.com/c/BrunoAntunesPT/videos
 5. https://nextjs.org/docs/basic-features/data-fetching
+6. https://create-react-app.dev/docs/deployment#github-pages
 
 ###### Assessment Tools
 1. https://developers.google.com/speed/pagespeed/insights
 2. https://search.google.com/test/mobile-friendly
 
 ###### Features
-2. https://getform.io/
-3. https://getform.io/docs/collecting-submissions/spam-filtering-with-recaptcha
+1. https://getform.io/
+2. https://getform.io/docs/collecting-submissions/spam-filtering-with-recaptcha
+3. https://www.buymeacoffee.com/
