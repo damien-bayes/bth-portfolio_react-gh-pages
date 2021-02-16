@@ -30,7 +30,7 @@ import summaryData from '../data/summary.md';
  * Page: Me
  */
 const Me = ({ markup }) => {
-  /* WARNING: Called only once */
+  /* WARNING: Called only once  */
   useEffect(() => {
     console.log('Markup response:', markup);
   }, []);
