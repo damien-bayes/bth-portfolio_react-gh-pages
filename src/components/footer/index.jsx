@@ -18,10 +18,10 @@ import React, {
 /*******************/
 
 /* Modular styles */
-import styles from '../styles/components/app-footer.module.scss';
+import styles from '../../styles/components/app-footer.module.scss';
 
 /* Settings */
-import AppSettings from '../settings/app';
+import AppSettings from '../../settings/app';
 
 /*****************************************************************************/
 

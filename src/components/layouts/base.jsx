@@ -12,7 +12,7 @@
 /***********************/
 /* THIRD-PARTY IMPORTS */
 /***********************/
-import React, { Fragment } from 'react';
+import React from 'react';
 
 /*
  * Import the next/head component to add meta information to the <head> of
@@ -28,15 +28,15 @@ import Head from 'next/head';
 import AppSettings from '../../settings/app';
 
 /* Components */
-import AppHeader from '../app-header';
-import AppFooter from '../app-footer';
+import AppHeader from '../header';
+import AppFooter from '../footer';
 
 import Sidebar from '../sidebar';
 
 /*****************************************************************************/
 
 const Layout = (props) => (
-  <Fragment>
+  <>
     <Head>
       <meta charSet="utf-8"/>
       <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
@@ -77,7 +77,11 @@ const Layout = (props) => (
       <Sidebar/>
     </div>
     <AppFooter/>
-  </Fragment>
+  </>
 );
+
+/***********/
+/* EXPORTS */
+/***********/
 
 export default Layout; 

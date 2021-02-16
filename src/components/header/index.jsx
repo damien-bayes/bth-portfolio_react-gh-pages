@@ -14,11 +14,11 @@ import React, {
 /*******************/
 
 /* Modular styles */
-import styles from '../styles/components/app-header.module.scss';
-import navigationStyles from '../styles/components/navigation.module.scss';
+import styles from '../../styles/components/app-header.module.scss';
+import navigationStyles from '../../styles/components/navigation.module.scss';
 
 /* Settings */
-import AppSettings from '../settings/app';
+import AppSettings from '../../settings/app';
 
 /*****************************************************************************/
 
