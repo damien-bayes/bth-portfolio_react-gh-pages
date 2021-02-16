@@ -1,6 +1,6 @@
 {
   "name": "bth-portfolio_gh-pages",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Baythium portfolio based on Github pages",
   "main": "next.config.js",
   "dependencies": {

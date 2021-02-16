@@ -9,7 +9,7 @@ import React from 'react';
 /*******************/
 
 /* Styles */
-import seriesStyles from '../../../../styles/components/series.module.scss';
+import seriesStyles from 'styles/components/series.module.scss';
 
 /*****************************************************************************/
 

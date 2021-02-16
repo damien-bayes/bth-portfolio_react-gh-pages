@@ -9,7 +9,7 @@ import React from 'react';
 /*******************/
 
 /* Styles */
-import twoLinedTextStyles from '../../../../styles/components/two-lined-text.module.scss';
+import twoLinedTextStyles from 'styles/components/two-lined-text.module.scss';
 
 /*****************************************************************************/
 

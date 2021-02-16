@@ -19,7 +19,7 @@ import Link from 'next/link';
 // import styles from '../styles/components/sidebar.module.scss';
 
 /* Styles */
-import styles from '../../styles/components/sidebar.module.scss';
+import styles from 'styles/components/sidebar.module.scss';
 
 /* Components */
 import SocialNetworks from './components/social-networks';
@@ -29,11 +29,11 @@ import JobPosition from './components/job-position';
 import WorkDays from './components/work-days';
 
 /* Data */
-import emailsData from '../../data/emails';
-import workdaysData from '../../data/workdays';
-import jobPositionData from '../../data/job-position';
-import languagesData from '../../data/languages';
-import socialNetworksData from '../../data/social-networks';
+import emailsData from 'data/emails';
+import workdaysData from 'data/workdays';
+import jobPositionData from 'data/job-position';
+import languagesData from 'data/languages';
+import socialNetworksData from 'data/social-networks';
 
 /*****************************************************************************/
 
@@ -116,5 +116,9 @@ const Sidebar = () => {
     </aside>
   )
 }
+
+/***********/
+/* EXPORTS */
+/***********/
 
 export default Sidebar;

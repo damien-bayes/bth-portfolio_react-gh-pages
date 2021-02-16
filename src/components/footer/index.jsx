@@ -25,6 +25,9 @@ import AppSettings from '../../settings/app';
 
 /*****************************************************************************/
 
+/**
+ * Component: Footer
+ */
 const Footer = () => {
   return (
     <footer className={styles['app-footer']}>

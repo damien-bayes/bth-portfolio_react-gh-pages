@@ -14,14 +14,17 @@ import React, {
 /*******************/
 
 /* Modular styles */
-import styles from '../../styles/components/app-header.module.scss';
-import navigationStyles from '../../styles/components/navigation.module.scss';
+import styles from 'styles/components/app-header.module.scss';
+import navigationStyles from 'styles/components/navigation.module.scss';
 
 /* Settings */
-import AppSettings from '../../settings/app';
+import AppSettings from 'settings/app';
 
 /*****************************************************************************/
 
+/**
+ * Component: Header
+ */
 const Header = () => {
   return (
     <header className={styles['app-header']}>
@@ -47,13 +50,18 @@ const Header = () => {
           <div>
             <div className={styles['app-header__brand']}>
               <a href={AppSettings.prefix + '/'}>
-                <img src={AppSettings.prefix + '/images/baythium-ecosystem-1.svg'} alt={AppSettings.companyName}/>
-                {AppSettings.name}
+                <img
+                  src={AppSettings.prefix + '/images/baythium-ecosystem-1.svg'}
+                  alt={AppSettings.companyName}
+                  loading='lazy'/>
+                {AppSettings.name}<span className='badge badge--secondary badge--rounded'>Alpha</span>
               </a>
             </div>
           </div>
           <div>
-            <div className={styles['app-header__parallelogram']}>English</div>
+            <div className={styles['app-header__parallelogram']}>
+              <button className="button button--secondary button--sm button--rippled">English</button>
+            </div>
           </div>
         </div>
 
